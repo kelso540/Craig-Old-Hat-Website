@@ -1,0 +1,88 @@
+header{
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: solid 2px var(--black);
+    background-image: url(../assets/belts.png);
+    background-repeat: no-repeat;
+    background-size: 30%;
+    background-position: 70% 28%;
+}
+header img{
+    height: 70px;
+    width: 150px;
+    cursor: pointer;
+}
+.headerLinks{
+    display: flex;
+    width: 20%;
+    justify-content: space-between;
+    align-self: flex-end;
+    text-decoration: none;
+    font-size: 18px;
+    padding-bottom: 10px;
+    color: var(--black);
+}
+.headerLinks a{
+    padding: 10px;
+    border: solid 2px transparent;
+    transition: all 0.5s;
+}
+.headerLinks a:hover{
+    background-color: var(--green);
+    border-radius: 10px;
+    color: var(--blue);
+    border: solid 2px black;
+    transition: all 0.5s;
+}
+.headerMobileLinks{
+    display: none;
+}
+.headerLogo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: all 0.5s;
+}
+.headerLogo:hover{
+    color: var(--red);
+    transition: all 0.5s;
+}
+header p{
+    border-top: solid 1px var(--black);
+    border-bottom: solid 1px var(--black);
+    cursor: pointer;
+    font-size: 12px;
+}
+
+@media screen and (max-width: 1200px) {
+    header{
+        background-position: 70% 20%;
+    }
+    .headerLinks{
+        display: none;
+    }
+    .headerMobileLinks{
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    header{
+        background-position: 70% 15%;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    header{
+        background-position: 70% 10%;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    header{
+        background-position: 70% 5%;
+    }
+}

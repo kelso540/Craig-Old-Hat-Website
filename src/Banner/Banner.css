@@ -1,0 +1,35 @@
+.bannerSection{
+    position: relative;
+    display: flex;
+    margin: 40px 0;
+}
+.bannerImg{
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.overlayDiv{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(150, 149, 149, 0.867);
+    padding: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    translate: -50% -50%;
+    border-radius: 20px;
+}
+.logoOverlay{
+    width: 50%;
+}
+.PleatherWorks{
+    font-size: 60px;
+    font-family: 'Rye', cursive;
+    border-top: solid 1px black;
+    border-bottom: solid 1px black;
+}
+.PallHandmadeByMe{
+    font-size: 25px;
+}

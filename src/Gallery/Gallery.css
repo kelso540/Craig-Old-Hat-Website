@@ -1,0 +1,30 @@
+.galleryDiv{
+    margin: 40px 0;
+}
+.galleryMainImg{
+    max-width: 40%;
+    height: auto;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.gallerySelectionDiv{
+    display: flex;
+    overflow: scroll;
+    column-gap: 10px;
+}
+.galleryImg{
+    cursor: pointer;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.modalGalleryImg{
+    max-width: 70%;
+    height: auto;
+    margin: auto;
+}
+.closeModalBtn{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
