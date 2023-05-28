@@ -13,6 +13,8 @@ header img{
     height: 70px;
     width: 150px;
     cursor: pointer;
+    filter: drop-shadow(0 4px 2px var(--black));
+    transition: all 0.5s;
 }
 .headerLinks{
     display: flex;
@@ -48,6 +50,7 @@ header img{
 }
 .headerLogo:hover{
     color: var(--red);
+    filter: drop-shadow(0 0 0 var(--black));
     transition: all 0.5s;
 }
 header p{

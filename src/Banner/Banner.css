@@ -23,6 +23,7 @@
 }
 .logoOverlay{
     width: 50%;
+    filter: drop-shadow(0 4px 2px var(--black));
 }
 .PleatherWorks{
     font-size: 60px;
