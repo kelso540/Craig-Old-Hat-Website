@@ -25,6 +25,35 @@
 }
 .closeModalBtn{
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 20px;
+    right: 20px;
+    font-size: 20px;
+    color: var(--red);
+    border: none;
+    border-radius: 50%;
+}
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    background-color: rgba(0, 0, 0, 0.468);
+    overflow: scroll;
+}
+@media screen and (max-width: 900px){
+    .galleryMainImg{
+        max-width: 100%;
+        margin-bottom: 40px;
+        align-self: center;
+    }
+    .modalGalleryImg{
+        max-width: 100%;
+        margin: auto;
+    }
 }

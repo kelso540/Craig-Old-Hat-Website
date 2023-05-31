@@ -18,7 +18,7 @@ function Banner() {
     }, 3000)
 
   return (
-    <section className='bannerSection'>
+    <div className='bannerSection'>
         <div className='overlayDiv'>
             <img alt='Logo Overlay' src={ logo } className='logoOverlay' />
             <div>
@@ -27,7 +27,7 @@ function Banner() {
             </div>
         </div>
         <img alt='Banner Image' src={ image } className='bannerImg' />
-    </section>
+    </div>
   )
 }
 

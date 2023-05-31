@@ -8,6 +8,7 @@ header{
     background-repeat: no-repeat;
     background-size: 30%;
     background-position: 70% 28%;
+    position: relative;
 }
 header img{
     height: 70px;
@@ -59,6 +60,77 @@ header p{
     cursor: pointer;
     font-size: 12px;
 }
+.burgerMenuIcon{
+    animation: rotateX 0.3s 1 linear;
+}
+.closeMenuIcon{
+    animation: rotateY 0.3s 1 linear;
+}
+.headerLinksMobile{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 200px;
+    justify-content: space-between;
+    align-self: flex-end;
+    text-decoration: none;
+    font-size: 25px;
+    color: var(--black);
+    position: absolute;
+    top: 131px;
+    left: 50%;
+    translate: -50% 0;
+    background-color: var(--green);
+    border: solid;
+    border-radius: 0 0 10px 10px;
+    z-index: 2;
+    overflow: hidden;
+    transition: all 1s;
+}
+.headerLinksMobile a{
+    border-bottom: solid 1px var(--black);
+    padding: 15px;
+}
+.headerLinksMobile a:last-child{
+    border: none;
+}
+.headerLinksMobileHide{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 0;
+    justify-content: space-between;
+    align-self: flex-end;
+    font-size: 25px;
+    color: var(--white);
+    position: absolute;
+    top: 131px;
+    left: 50%;
+    translate: -50% 0;
+    background-color: var(--green);
+    border: none;
+    z-index: 2;
+    overflow: hidden;
+    transition: all 1s;
+}
+.headerLinksMobileHide a{
+    border-bottom: solid 1px var(--black);
+    padding: 15px;
+}
+.headerLinksMobileHide a:last-child{
+    border: none;
+}
+
+@keyframes rotateY {
+    100%{     
+        rotate: y 360deg;
+    }
+}
+@keyframes rotateX {
+    100%{     
+        rotate: x 360deg;
+    }
+}
 
 @media screen and (max-width: 1200px) {
     header{
@@ -69,6 +141,7 @@ header p{
     }
     .headerMobileLinks{
         display: flex;
+        font-size: 30px;
     }
 }
 
@@ -86,6 +159,19 @@ header p{
 
 @media screen and (max-width: 850px) {
     header{
-        background-position: 70% 5%;
+        background-image: none;
+    }
+    header img{
+        height: 50px;
+        width: 100px;
+        cursor: pointer;
+        filter: drop-shadow(0 4px 2px var(--black));
+        transition: all 0.5s;
+    }
+    .headerLinksMobile{
+        top: 111px;
+    }
+    .headerLinksMobileHide{
+        top: 111px;
     }
 }

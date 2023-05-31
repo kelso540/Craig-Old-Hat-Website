@@ -5,14 +5,6 @@ import ReactModal from 'react-modal'
 
 function Gallery() {
 
-  const modalStyles = {
-    content: {
-      display: 'flex',
-      justifyContent: 'center',
-      alignItems: 'center',
-    }
-  };
-
   const [currentImg, setCurrentImg] = useState(galleryArray[0])
   const [modalOpen, setModalOpen] = useState(false)
 
@@ -23,8 +15,10 @@ function Gallery() {
   return (
     <section className='galleryDiv'>
       <ReactModal 
-        isOpen={ modalOpen } 
-        style={ modalStyles } 
+        appElement={document.getElementById('root')}
+        isOpen={ modalOpen }
+        className='modal'
+        overlayClassName='modal'
         onRequestClose={()=>setModalOpen(false)}
       >
         <button className='closeModalBtn' onClick={()=>{setModalOpen(false)}}>X</button>
@@ -35,6 +29,7 @@ function Gallery() {
         {
           galleryArray.map((item, index)=>
             <img alt='Galley Image' 
+              key={ item }
               src={ item } 
               className='galleryImg' 
               onClick={()=>setImg(index)}/>

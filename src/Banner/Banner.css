@@ -23,7 +23,7 @@
 }
 .logoOverlay{
     width: 50%;
-    filter: drop-shadow(0 4px 2px var(--black));
+    filter: drop-shadow(0 5px 2px var(--black));
 }
 .PleatherWorks{
     font-size: 60px;
@@ -33,4 +33,20 @@
 }
 .PallHandmadeByMe{
     font-size: 25px;
+}
+@media screen and (max-width: 1000px) {
+    .bannerSection{
+        display: block;
+        margin: 20px 0 40px 0;
+    }
+    .overlayDiv{
+        position: relative;
+        top: 0;
+        left: 0;
+        translate: 0 0;
+        background-color: transparent;
+    }
+    .logoOverlay{
+        width: 100%;
+    }
 }
