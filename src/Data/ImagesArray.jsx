@@ -33,13 +33,11 @@ import img32 from '../assets/IMG_6369.jpeg'
 import img33 from '../assets/Resized_image000000(2).jpeg'
 import img34 from '../assets/C5EA246A-6E1A-4B01-A790-D027AD9AC1F6.jpeg'
 
-const imageArray = [
-    img1, 
+const imageArray = [ 
     img2,
     img3,
     img4,
     img5,
-    img6,
 ]
 
 const galleryArray = [

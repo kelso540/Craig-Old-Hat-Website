@@ -6,7 +6,11 @@
 .bannerImg{
     max-width: 100%;
     height: auto;
+    position: relative;
     border-radius: 10px;
+    animation: fade 0.7s 1 linear;
+    z-index: 0;
+    overflow: hidden;
 }
 .overlayDiv{
     display: flex;
@@ -20,6 +24,7 @@
     left: 50%; 
     translate: -50% -50%;
     border-radius: 20px;
+    z-index: 1;
 }
 .logoOverlay{
     width: 50%;
@@ -33,6 +38,14 @@
 }
 .PallHandmadeByMe{
     font-size: 25px;
+}
+@keyframes fade {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 @media screen and (max-width: 1000px) {
     .bannerSection{

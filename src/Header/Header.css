@@ -159,7 +159,7 @@ header p{
 
 @media screen and (max-width: 850px) {
     header{
-        background-image: none;
+        background-position: 70% 3%;
     }
     header img{
         height: 50px;
@@ -173,5 +173,11 @@ header p{
     }
     .headerLinksMobileHide{
         top: 111px;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    header{
+        background-image: none;
     }
 }
