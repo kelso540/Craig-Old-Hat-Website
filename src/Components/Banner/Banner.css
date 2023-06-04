@@ -34,6 +34,7 @@
     font-family: 'Rye', cursive;
     border-top: solid 1px black;
     border-bottom: solid 1px black;
+    padding: 10px 0; 
 }
 .PallHandmadeByMe{
     font-size: 25px;

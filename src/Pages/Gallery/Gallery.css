@@ -31,6 +31,8 @@
     color: var(--red);
     border: none;
     border-radius: 50%;
+    height: 50px;
+    width: 50px;
 }
 .modal {
     display: flex;
@@ -45,6 +47,7 @@
     translate: -50% -50%;
     background-color: rgba(0, 0, 0, 0.468);
     overflow: scroll;
+    z-index: 10;
 }
 @media screen and (max-width: 900px){
     .galleryMainImg{
