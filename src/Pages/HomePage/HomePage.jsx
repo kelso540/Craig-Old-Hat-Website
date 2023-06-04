@@ -1,6 +1,6 @@
 import React from 'react'
 import './HomePage.css'
-import Banner from '../Banner/Banner'
+import Banner from '../../Components/Banner/Banner'
 
 function HomePage() {
   return (

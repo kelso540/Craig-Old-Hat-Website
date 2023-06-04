@@ -1,11 +1,11 @@
 import './App.css'
 import { BrowserRouter, Routes, Route } from "react-router-dom"
-import Header from './Header/Header'
-import HomePage from './HomePage/HomePage'
-import Footer from './Footer/Footer'
-import Contact from './Contact/Contact'
-import About from './About/About'
-import Gallery from './Gallery/Gallery'
+import Header from './Components/Header/Header'
+import HomePage from './Pages/HomePage/HomePage'
+import Footer from './Components/Footer/Footer'
+import Contact from './Pages/Contact/Contact'
+import About from './Pages/About/About'
+import Gallery from './Pages/Gallery/Gallery'
 
 function App() {
 

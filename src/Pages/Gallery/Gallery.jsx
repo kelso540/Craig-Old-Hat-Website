@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './Gallery.css'
-import { galleryArray } from '../Data/ImagesArray'
+import { galleryArray } from '../../Components/Data/ImagesArray'
 import ReactModal from 'react-modal'
 
 function Gallery() {

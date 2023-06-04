@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './Header.css'
-import logo from '../assets/craig-old-hat-logo.png'
-import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
+import logo from '../../assets/craig-old-hat-logo.png'
+import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
 
 function Header() {
 

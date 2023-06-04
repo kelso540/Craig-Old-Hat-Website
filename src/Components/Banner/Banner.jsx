@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import './Banner.css'
-import logo from '../assets/craig-old-hat-logo.png'
+import logo from '../../assets/craig-old-hat-logo.png'
 import { imageArray } from '../Data/ImagesArray'
 
 function Banner() {
@@ -34,7 +34,6 @@ function Banner() {
         alt='Banner Image'
         src={image}
         className='bannerImg'
-        key={count}
       />
     </div>
   )
