@@ -14,16 +14,17 @@ function Gallery() {
 
   return (
     <section className='galleryDiv'>
+
       <ReactModal 
         appElement={document.getElementById('root')}
         isOpen={ modalOpen }
         className='modal'
-        overlayClassName='modal'
         onRequestClose={()=>setModalOpen(false)}
       >
         <button className='closeModalBtn' onClick={()=>{setModalOpen(false)}}>X</button>
         <img alt='Main Image' src={ currentImg } className='modalGalleryImg' />
       </ReactModal>
+      
       <img alt='Main Image' src={ currentImg } className='galleryMainImg' onClick={()=>setModalOpen(true)} />
       <div className='gallerySelectionDiv'>
         {
